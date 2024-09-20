@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f2e7; /* Cor de fundo clara */
+    color: #4d3d2a; /* Texto em marrom */
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #8b5a2b, #d19a1a); /* Gradiente de cores */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em; /* Tamanho do título */
+    margin-bottom: 10px;
+}
+
+nav {
+    margin: 15px 0; /* Margem para o menu */
+}
+
+nav a {
+    color: white; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px 15px; /* Espaçamento em torno do link */
+    border: 2px solid transparent; /* Borda transparente */
+    transition: background 0.3s; /* Transição suave */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo ao passar o mouse */
+}
+
+section {
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Margem externa */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+h2 {
+    font-size: 2em; /* Tamanho dos subtítulos */
+    margin-bottom: 15px; /* Margem abaixo do título */
+    color: #8b5a2b; /* Cor para os títulos */
+}
+
+footer {
+    background-color: #8b5a2b; /* Cor de fundo do rodapé */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px; /* Espaçamento interno */
+    position: relative; /* Para manter na parte inferior */
+    bottom: 0;
+    width: 100%; /* Largura total */
+}
+
+form {
+    display: flex; /* Flexbox para alinhamento */
+    flex-direction: column; /* Alinhamento vertical */
+}
+
+label {
+    margin: 10px 0 5px; /* Margem ao redor do rótulo */
+}
+
+input, textarea {
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Margem abaixo do campo */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+button {
+    background-color: #d19a1a; /* Cor de fundo do botão */
+    color: white; /* Texto do botão em branco */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background 0.3s; /* Transição suave */
+}
+
+button:hover {
+    background-color: #c88b14; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos para imagens */
+.imagem-dupla {
+    max-width: 100%; /* Largura máxima */
+    height: auto; /* Altura automática */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 15px 0; /* Margem acima e abaixo da imagem */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Tamanho menor em telas pequenas */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Tamanho menor em telas pequenas */
+    }
+
+    nav a {
+        display: block; /* Exibe links em bloco */
+        margin: 5px 0; /* Margem entre links */
+    }
+}
+
